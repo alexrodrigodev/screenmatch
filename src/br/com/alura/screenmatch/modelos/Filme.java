@@ -17,7 +17,7 @@ public class Filme {
     }
 
     public boolean isIncluidoNoPlano() {
-        return incluidoNoPlano
+        return incluidoNoPlano;
     }
 
     public int getDuracaoEmMinutos() {

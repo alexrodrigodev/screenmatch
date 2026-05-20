@@ -52,10 +52,10 @@ public class Principal {
         episodio.setTotalVisualizacoes(300);
         filtro.filtra(episodio);
 
-        var filmeDoPaulo = new Filme("Dogville", 200);
+        var filmeDoPaulo = new Filme("Dogville", 2003);
         //filmeDoPaulo.setNome("Dogville");
-        //filmeDoPaulo.setDuracaoEmMinutos(200);
-        filmeDoPaulo.setAnoDeLancamento(2003);
+        filmeDoPaulo.setDuracaoEmMinutos(200);
+        //filmeDoPaulo.setAnoDeLancamento(2003);
         filmeDoPaulo.avalia(10);
 
         ArrayList<Filme> listaDeFilmes = new ArrayList<>();

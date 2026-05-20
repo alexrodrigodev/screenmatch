@@ -9,9 +9,9 @@ import java.util.ArrayList;
 
 public class Principal {
     static void main(String[] args) {
-        Filme meuFilme = new Filme("O poderoso chefão");
+        Filme meuFilme = new Filme("O poderoso chefão", 1970);
         //meuFilme.setNome("O poderoso chefão");
-        meuFilme.setAnoDeLancamento(1970);
+        //meuFilme.setAnoDeLancamento(1970);
         meuFilme.setDuracaoEmMinutos(180);
         System.out.println("Duração do filme: " + meuFilme.getDuracaoEmMinutos());
 
@@ -23,18 +23,18 @@ public class Principal {
         System.out.println("Média das avaliações: " + meuFilme.pegaMedia());
 
 
-        Serie lost = new Serie();
-        lost.setNome("Lost");
-        lost.setAnoDeLancamento(2000);
+        Serie lost = new Serie("Lost", 2000);
+        //lost.setNome("Lost");
+        //lost.setAnoDeLancamento(2000);
         lost.exibeFichaTecnica();
         lost.setTemporadas(10);
         lost.setEpisodiosPorTemporada(10);
         lost.setMinutosPorEpisodio(50);
         System.out.println("Duração para maratonar : " + lost.getDuracaoEmMinutos());
 
-        Filme outroFilme = new Filme("Avatar");
+        Filme outroFilme = new Filme("Avatar", 2023);
         //outroFilme.setNome("Avatar");
-        outroFilme.setAnoDeLancamento(2023);
+        //outroFilme.setAnoDeLancamento(2023);
         outroFilme.setDuracaoEmMinutos(200);
 
         CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
@@ -52,9 +52,9 @@ public class Principal {
         episodio.setTotalVisualizacoes(300);
         filtro.filtra(episodio);
 
-        var filmeDoPaulo = new Filme("Dogville");
+        var filmeDoPaulo = new Filme("Dogville", 200);
         //filmeDoPaulo.setNome("Dogville");
-        filmeDoPaulo.setDuracaoEmMinutos(200);
+        //filmeDoPaulo.setDuracaoEmMinutos(200);
         filmeDoPaulo.setAnoDeLancamento(2003);
         filmeDoPaulo.avalia(10);
 
